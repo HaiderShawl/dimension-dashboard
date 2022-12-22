@@ -1,17 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap");
 @font-face {
   font-family: "GT Walsheim";
-  src: url("../public/GT-Walsheim-Regular-Trial.ttf");
+  src: url("../public/fonts/GT-Walsheim-Regular-Trial.ttf");
   font-weight: 400;
 }
 @font-face {
   font-family: "GT Walsheim";
-  src: url("../public/GT-Walsheim-Medium-Trial.ttf");
+  src: url("../public/fonts/GT-Walsheim-Medium-Trial.ttf");
   font-weight: 500;
 }
 @font-face {
   font-family: "GT Walsheim";
-  src: url("../public/GT-Walsheim-Bold-Trial.ttf");
+  src: url("../public/fonts/GT-Walsheim-Bold-Trial.ttf");
   font-weight: 700;
 }
 
