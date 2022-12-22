@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap");
+@font-face {
+  font-family: "GT Walsheim";
+  src: url("../public/GT-Walsheim-Regular-Trial.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "GT Walsheim";
+  src: url("../public/GT-Walsheim-Medium-Trial.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "GT Walsheim";
+  src: url("../public/GT-Walsheim-Bold-Trial.ttf");
+  font-weight: 700;
+}
+
+.button:active{
+  box-shadow: 0 1px #dfe1e4;
+  transform: translateY(3px);
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply leading-[normal] m-0;
+}

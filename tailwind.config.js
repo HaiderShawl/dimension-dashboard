@@ -1,0 +1,45 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: { fontFamily: { "gt-walsheim": "'GT Walsheim'", inter: "Inter" } },
+    colors: {
+      white: "#fff",
+      gray: {
+        "100": "#f7f9fa",
+        "200": "#f5f5f5",
+        "300": "#f1f9ee",
+        "400": "#f2f5f7",
+        "500": "#eaf0ff",
+        "600": "#efefef",
+        "700": "#edebff",
+        "800": "#eee",
+        "900": "#dfe1e4",
+        "1000": "#98a5b3",
+        "1100": "#7f8995",
+        "1200": "#6c6f75",
+        "1300": "#656e77",
+        "1400": "#5c6066",
+        "1500": "#292938",
+        "1600": "#282a2f",
+        "1700": "#191925",
+        "1800": "#111118",
+        "1900": "rgba(255, 255, 255, 0.16)",
+      },
+      indigo: {
+        "100": "#2f6bfe",
+        "200": "#533be5",
+        "300": "rgba(83, 59, 229, 0.05)",
+      },
+      black: "#000",
+      blue: "#4734fe",
+      violet: "#8478fe",
+      green: "#78c552",
+    },
+    fontSize: { sm: "10px", base: "12px", lg: "14px", xl: "16px" },
+  },
+  corePlugins: { preflight: false },
+};
