@@ -35,8 +35,8 @@ const Kanban = () => {
       newTaskIds.splice(source.index, 1);
       newTaskIds.splice(destination.index, 0, draggableId);
 
-      const newColumn = {
-        ...start,
+      const newColumn: any = {
+        ...start as object,
         taskIds : newTaskIds,
       };
 
@@ -54,15 +54,15 @@ const Kanban = () => {
     // Moving from one list to another
     const startTaskIds = Array.from(start['taskIds']);
     startTaskIds.splice(source.index, 1);
-    const newStart = {
-      ...start,
+    const newStart: any = {
+      ...start as object,
       taskIds: startTaskIds,
     };
 
     const finishTaskIds = Array.from(finish['taskIds']);
     finishTaskIds.splice(destination.index, 0, draggableId);
-    const newFinish = {
-      ...finish,
+    const newFinish : any = {
+      ...finish as object,
       taskIds: finishTaskIds,
     };
 
@@ -78,9 +78,14 @@ const Kanban = () => {
 		console.log(newState)
 	};
 
+	function onDragUpdate(result: any) {
+		console.log(result.destination)
+	}
+
   return (
 		<DragDropContext
 			onDragEnd={onDragEnd}
+			onDragUpdate={onDragUpdate}
 		>
 			<div className="flex flex-row w-full h-full mt-[32px] mb-[264px] overflow-scroll">
 				<div className="flex-none flex-col basis-1/3 ml-[26px] items-start justify-start gap-[24px] text-gray-1800">
